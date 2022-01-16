@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <title>Calculator</title>
+    <script src="index.js" type="text/javascript"></script>
   </head>
 
   <body>
-    <div id="resultArea">124678</div>
+    <div id="resultArea"></div>
     <div>
       <table>
         <tr>
@@ -19,7 +20,7 @@
           <td class="highlight">/</td>
         </tr>
         <tr>
-          <td>7</td>
+          <td onclick="appendOperation(7)">7</td>
           <td>8</td>
           <td>9</td>
           <td class="highlight">x</td>
