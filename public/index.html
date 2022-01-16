@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="\src\styles.css" />
+    <title>Calculator</title>
+    <script src="\src\index.js" type="text/javascript"></script>
+  </head>
+
+  <body>
+    <div id="resultArea"></div>
+    <div>
+      <table>
+        <tr>
+          <td class="highlight" onclick="deleteAll() ">C</td>
+          <td class="highlight" onclick="deleteLast()">DEL</td>
+          <td class="highlight" onclick="appendOperation(' % ')">%</td>
+          <td class="highlight" onclick="appendOperation(' / ')">/</td>
+        </tr>
+        <tr>
+          <td onclick="appendOperation(7)">7</td>
+          <td onclick="appendOperation(8)">8</td>
+          <td onclick="appendOperation(9)">9</td>
+          <td class="highlight"  onclick="appendOperation(' * ')">x</td>
+        </tr>
+        <tr>
+          <td onclick="appendOperation(4)">4</td>
+          <td onclick="appendOperation(5)">5</td>
+          <td onclick="appendOperation(6)">6</td>
+          <td class="highlight" onclick="appendOperation(' - ')">-</td>
+        </tr>
+        <tr>
+          <td onclick="appendOperation(1)">1</td>
+          <td onclick="appendOperation(2)">2</td>
+          <td onclick="appendOperation(3)">3</td>
+          <td class="highlight" onclick="appendOperation(' + ')">+</td>
+        </tr>
+        <tr>
+          <td id="noHover"></td>
+          <td onclick="appendOperation(0)">0</td>
+          <td id="noHover"></td>
+          <td id="result" onclick="calculateResult(result)">=</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
